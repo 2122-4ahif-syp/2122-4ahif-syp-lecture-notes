@@ -1,0 +1,28 @@
+= Lecture Notes 4ahif - SYP 21/22
+Thomas W. Stütz
+1.0.0, 2021-09-26: Comments and lab instructions to the course lectures
+ifndef::imagesdir[:imagesdir: images]
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+
+// print the toc here (not at the default position)
+//toc::[]
+
+== 2021-09-23, Do.
+
+* Anwesend: M.Bucek
+* Vorläufige Einteilung der Projektgruppen
+
+//image:2021-09-23.projektgruppen.png[]
+
+
+== 2021-09-27
+
+
+
