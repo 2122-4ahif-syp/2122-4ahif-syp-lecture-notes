@@ -1,6 +1,6 @@
 = Lecture Notes 4ahif - SYP 21/22
 Thomas W. Stütz
-1.0.0, 2021-09-26: Comments and lab instructions to the course lectures
+1.0.0, {docdate}: Comments and lab instructions to the course lectures
 ifndef::imagesdir[:imagesdir: images]
 //:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
 :sourcedir: ../src/main/java
@@ -19,10 +19,24 @@ ifdef::backend-html5[]
 * Anwesend: M.Bucek
 * Vorläufige Einteilung der Projektgruppen
 
-//image:2021-09-23.projektgruppen.png[]
+image:2021-09-23.projektgruppen.png[]
 
 
 == 2021-09-27
 
+image:git-folder.png[]
+
+=== Projekte festgelegt
 
 
+== 2021-10-05
+
+* Projektarbeit (UCD und CLD)
+
+* Datenmodelle (Beispielskatalog)
+
+** Bsp 4 - Kinokette
+
+*** CLD wurde teilweise erarbeitet
+
+IMPORTANT: Übung: Fertigstellen des CLDs bis Donnerstag 7.10.2021
