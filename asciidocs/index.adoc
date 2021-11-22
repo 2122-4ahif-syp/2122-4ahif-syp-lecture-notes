@@ -40,3 +40,86 @@ image:git-folder.png[]
 *** CLD wurde teilweise erarbeitet
 
 IMPORTANT: Übung: Fertigstellen des CLDs bis Donnerstag 7.10.2021
+
+
+== 2021-10-11
+
+=== Erstellung von Asciidoctor-Dokumenten
+
+Es wurde im Detail erläutert und vorgezeigt, wie man gh-pages mit Asciidoctor und revealjs erstellen kann.
+
+== 2021-11-22 (Distance Learning)
+
+=== Aufsetzen des Projekts
+
+* [ ] Eintragen des Projekts im YouTrack
+* [ ] Verbindung zum VCS herstellen
+* [ ] Definieren der User Stories und Eintragen ins YT
+* [ ] Definieren von Tasks, Zuweisen zu Personen, Eintragen ins YT
+* [ ] Erstellen von Sprints (sprint 1, sprint 2) als zeitliche Komponente
+* [ ] Die jeweiligen Commits sind den Tasks zuzuweisen (-> in YT sind bei den Tasks die Commits aufgelistet)
+
+
+=== Projektthemen
+
+[%autowidth]
+|===
+|Projekt |Teammitglieder |Anmerkung
+
+|Absolventenverband FIT
+|*Niklas Aichinger*, Julia König
+|Repository von M.Bucek
+
+|LeoCompetition
+|*Christoph Handel*, Lukas Baumgartner, Joachim Pelzeder
+|
+
+|Vinitor
+|*Sheila Hautzmayer*, Anna Hartl
+|Repository bei Vinitor (gitlab)
+
+|Beeyond
+|*Markus Remplbauer*, Nico Hirsch
+|
+
+|LeoCode
+|*Florian Keintzel*, Raphael Ablinger, Oliver Sugic
+|
+
+|School-IoT
+|*Jakob Rathberger*, Philipp Kerschbaum
+|
+
+|LeoQuest
+|*Edina Abazovic*, Sebastijan Bogdan, Marcel Plakolb, Paul Binder
+|
+
+|Franklyn
+|*Tamara Melcher*, Michael Tran
+|
+
+|Leonie-Chatbot (LeonieWeb)
+|*Darius-Cristian Pavelescu*, Niklas Neudorfer, Johannes Tunc
+|
+
+|===
+
+=== Erstellen von Protokollen
+
+* Jedes Gespräch mit Nicht-Teammitgliedern ist zu protokollieren
+** ev. Gedächtnisprotokoll
+* Die Protokolle sind im adoc-Format zu erstellen
+* Wenn man will kann man diese Protokolle in die gh-pages einbinden (vgl quarkus-technology-notes)
++
+----
+<<20yy-mm-dd-thema.adoc>>
+----
+
+* Vorlage für https://github.com/htl-leonding-college/asciidoctor-docker-template/blob/master/asciidocs.demo/minutes-of-meeting.adoc[Protokolle]
+
+
+
+
+
+
+

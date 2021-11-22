@@ -1,0 +1,11 @@
+@startuml
+
+
+rectangle Vorbereitung
+rectangle Durchführung
+rectangle Auswertung
+
+Vorbereitung -> Durchführung
+Durchführung -> Auswertung
+
+@enduml
