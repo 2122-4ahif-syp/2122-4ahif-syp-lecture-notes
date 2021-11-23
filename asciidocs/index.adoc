@@ -118,6 +118,42 @@ Es wurde im Detail erläutert und vorgezeigt, wie man gh-pages mit Asciidoctor u
 * Vorlage für https://github.com/htl-leonding-college/asciidoctor-docker-template/blob/master/asciidocs.demo/minutes-of-meeting.adoc[Protokolle]
 
 
+== 2021-11-23
+
+=== Vorgehensweise beim Projekt
+
+==== gh-pages
+
+* Die Projektgruppen arbeiten selbstständig an Ihren Projekten, dh es wird nicht gewartet bis jede Kleinigkeit mit dem Betreuungslehrer besprochen wird.
+
+* Ist keine Arbeit zu machen, wird aktiv nachgefragt und neue User Stories werden vereinbart.
+
+* Es sind gh-pages zu erstellen, mit einer kurzen Beschreibung des Projekts
+** Die gh-pages dienen als Landing Page, dh wenn Besucher der Website, die keine Ahnung vom Projekt haben, dies lesen, so soll ihnen ungefähr klar sein, um was es geht
+** Wir verwenden ein jam-stack.
+*** j -> javascript; a -> api; m -> markup language
+
+** Dann werden die anderen Entwurfsdokumente, Protokolle usw verlinkt
+** Bsp: https://konstantinfrank01.github.io/safer-pool-docs/index.html[Projekt Netunus]
+
+==== Youtrack
+
+* Ausgehend von den Use Cases werden die User Stories (aus Gründen der Vereinfachung)  abgeleitet
+* In Youtrack wird für jede User Story eine Swimlane (Zeile) erstellt
+* Für jede User Story werden Tasks erstellt
+* Die Tasks werden einem oder mehreren Teammitgliedern zugewiesen
+* (Wenn man auch die Storypoints vergibt, kann man ein Burndown-Chart generieren lassen )
+* Als zeitliche Komponente (Fertigstellungstermin) sind Sprints zu erstellen
+** Sprints werden mit "Sprint 001 xxx", "Sprint 002" usw bezeichnet
+** Die Sprints werden den einzelnen Tasks (ev auch US) zugewiesen.
+* Jeder Commit ist den einzelnen Tasks zuzuordnen
+** zB Commit-Message: bla bla #leocomp-3 in progress
+
+IMPORTANT: Grundprinzip: Wir überlegen uns, was wir tun, wir tun es und wir dokumentieren das Tun
+
+
+
+
 
 
 
