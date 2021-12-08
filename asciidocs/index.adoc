@@ -152,6 +152,64 @@ Es wurde im Detail erläutert und vorgezeigt, wie man gh-pages mit Asciidoctor u
 IMPORTANT: Grundprinzip: Wir überlegen uns, was wir tun, wir tun es und wir dokumentieren das Tun
 
 
+=== Projektarbeit ist zu dokumentieren
+
+* Die Teams werden darauf hingewiesen, dass die Projektarbeit zu dokumentieren ist:
+** Zuerst sind im Youtrack User-Stories einzutragen
+** Für diese User-Stories sind Tasks zu erstellen
+*** Diese müssen den einzelnen Teammitgliedern zugewiesen werden
+*** weiters sind die Sprints (zeitliche Komponente) festzulegen
+*** Die einzelnen Commits sind den Tasks zuzuordnen.. Im Youtrack muss man ersehen
+
+image::zuordnung-commit-task-yt.png[]
+
+
+== 2021-12-06
+
+=== Testen im Rahmen der Qualitätssicherung
+
+=== Grundprinzipien
+
+* Objektorientierung (Objektidentität)
+* Programmieren gegen Schnittstellen
+* Single-Responsibility-Principle
+* Open/Closed Principle
+
+// == 2021-12-07
+
+
+==== Analytische Maßnahmen
+
+* Buch Seite 322
+
+* Statische Methoden
+
+* Dynamische Methoden (Testen)
+
+* Black-Box
+
+image::black-box-white-box.png[]
+
+IMPORTANT: Testfallspezifikation - man überlegt sich, wie die zu erstellenden Testfälle aussehen
+
+* Äquivalenzklassenmethode
+* Grenzwertfallanalyse
+** Testfall auf der Grenze des Wertebereichs
+** Testfall knapp über der Grenze
+** Testfall knapp unter der Grenze
+
+
+* White Box
+
+* Grey Box
+
+image::pfadabdeckung.png[]
+
+
+image::v-modell.png[]
+
+
+
 
 
 
