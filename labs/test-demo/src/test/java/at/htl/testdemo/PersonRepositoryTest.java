@@ -31,7 +31,7 @@ class PersonRepositoryTest {
 
         assertThat(table)
                 .hasNumberOfRows(1)
-                .column("NAME").value().isEqualTo("Grisu");
+                .row(0).value("NAME").isEqualTo("Grisu");
 
     }
 }
