@@ -209,6 +209,31 @@ image::pfadabdeckung.png[]
 image::v-modell.png[]
 
 
+== 2022-01-10
+
+=== Design Patterns, Systemarchitekturen
+
+=== Data Transfer Objects - DTO
+
+* Grundprinzipen der OO
+* Value Objects
+* DTOs
+** json-Objekte
+** java-records
+
+//--
+
+* https://martinfowler.com/eaaCatalog/dataTransferObject.html
+* https://www.adam-bien.com/roller/abien/entry/json_is_the_new_dto
+* https://adambien.blog/roller/abien/entry/dto_the_exceptions_from_the
+* https://medium.com/javarevisited/dto-or-not-to-dto-58259d4228ec
+* https://medium.com/javarevisited/not-so-obvious-tips-to-write-better-dtos-in-java-c6116895b180
+* https://de.wikipedia.org/wiki/Value_Object
+* https://thorben-janssen.com/java-records-hibernate-jpa/
+* https://marco.dev/java-records
+* https://www.youtube.com/watch?v=LDLlE_qePhs
+* https://github.com/biobob/yasson-records
+
 
 
 
