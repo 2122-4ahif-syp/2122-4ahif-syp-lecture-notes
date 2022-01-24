@@ -234,6 +234,55 @@ image::v-modell.png[]
 * https://www.youtube.com/watch?v=LDLlE_qePhs
 * https://github.com/biobob/yasson-records
 
+== 2022-01-18
+
+image::v-modell.png[]
+
+* Jede Komponente soll getestet werden
+* Die Tests sollen voneinander unabhängig sein (beliebige Reihenfolge)
+* Es sollen Tests auf den verschiedenen Testlevels (Modultest / Integrationstest / Systemtest / Akzeptanztest) erstellt werden
+
+.Testplan
+[%autowidth]
+|===
+|Testlevel |Testmethode |Testgegenstand |Erwartetes Verhalten
+
+|Modultest
+|MyTest::calcAgeWith100y_Fail
+|berechnetes Altersfeld Person
+|Column 4, row 1
+
+|Systemtest
+|...
+|...
+|...
+|===
+
+== 2022-01-24
+
+=== Informationswürfel
+
+* relationale DB vs noSQL-DB
+
+=== Vorgehensmodelle
+
+* Wasserfallmodell
+* eXtreme Programming
+* Scrum
+
+=== Software-Qualitätsmanagement
+
+* Zertifizierungen
+** ISO 9000
+** TQM
+** CMM
+** SPICE
+
+
+
+
+
+
 
 
 
