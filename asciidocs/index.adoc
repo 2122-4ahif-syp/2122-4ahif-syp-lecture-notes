@@ -10,6 +10,11 @@ ifndef::imagesdir[:imagesdir: images]
 
 //Need this blank line after ifdef, don't know why...
 ifdef::backend-html5[]
+// https://fontawesome.com/v4.7.0/icons/
+icon:file-text-o[link=https://raw.githubusercontent.com/2122-4ahif-nvs/2122-4ahif-syp-lecture-notes/main/asciidocs/{docname}.adoc] ‏ ‏ ‎
+icon:github-square[link=https://github.com/2122-4ahif-syp/2122-4ahif-syp-lecture-notes] ‏ ‏ ‎
+icon:home[link=https://htl-leonding.github.io/]
+endif::backend-html5[]
 
 // print the toc here (not at the default position)
 //toc::[]
@@ -280,14 +285,37 @@ image::v-modell.png[]
 
 
 
+== 2022-02-14 - DevOps
 
 
+* Please, watch this video
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0yWAtQ6wYNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+++++
 
 
+== 2022-03-01
+
+=== Übung: Erstellung von `Dockerfile` 's
+
+* Erstellen Sie für jede Datenbank ein eigenes Verzeichnis in Ihrem Microprojekt
+
+==== Derbydb
+
+* Die verschiedenen Dockerfiles sind jeweils in einem eigenen Verzeichnis mit aussagekräftigem Namen
+* Erstellen Sie ein Dockerfile für die DerbyDb
+** Eine Version soll die Daten der DB im Container speichern.
+** eine zweite Version soll die Daten mittels *Bind Mount* im Ausführungsverzeichnis im Verzeichnis `data` speichern.
+* Erstellen Sie
+** einen Aufruf mittels `docker`-Command
+** erstellen Sie einen Aufruf mittels docker-compose
+*** fügen Sie der docker-compose Konfiguration noch einen Container mit einem *nativen* Quarkus Server hinzu, der Daten in der Datenbank speichert.
 
 
+==== Postgres
 
+* Erstellen Sie dieselbe Aufgabe mit einer Postgres DB
 
-
-
+* Fügen Sie hier noch einen "Adminer" hinzu (als eigenen docker-compose Service)
 
