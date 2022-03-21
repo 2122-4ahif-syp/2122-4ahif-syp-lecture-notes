@@ -14,5 +14,6 @@ jobs:
       - name: install stuff
         run: |
           sudo apt install -y tree
-          sudo ls -lah
+          sudo pwd
           sudo tree -d
+          sudo ls / -lah
