@@ -7,6 +7,7 @@ ifndef::imagesdir[:imagesdir: images]
 :icons: font
 :sectnums:    // Nummerierung der Überschriften / section numbering
 :toc: left
+:experimental:
 
 //Need this blank line after ifdef, don't know why...
 ifdef::backend-html5[]
@@ -318,4 +319,116 @@ image::v-modell.png[]
 * Erstellen Sie dieselbe Aufgabe mit einer Postgres DB
 
 * Fügen Sie hier noch einen "Adminer" hinzu (als eigenen docker-compose Service)
+
+
+== 2022-03-14
+
+=== asciidoctor / plantuml - testdrive
+
+TIP: Lernen Sie Datenmodellierung
+
+IMPORTANT: Verstehen Sie die Zusammenhänge
+
+
+kbd:[Stg-T]
+
+[plantuml,fussballliga-cld-soll,svg]
+----
+include::plantuml/fussballliga-cld.puml[]
+----
+
+=== Stoffumfang der 1. LF
+
+* asciidoctor
+* plantuml
+* qualitätsmanagement
+** wähle ich testfälle aus?
+** Teststrategien?
+*** Grenzwertanalyse
+*** Äquivalenzklassenanalyse
+** assertj-core und assertj-db
+* git
+
+==== Stoff der zu dieser LF nicht kommt
+* gh-actions
+* docker
+* karate
+* rest-assured
+
+
+=== Projektpräsentation
+
+* Sämtliche Projekte sind zu präsentieren:
+* Verwendung von revealjs und asciidoctor
+
+** https://asciidoctor-revealjs-examples.netlify.app/
+** https://docs.asciidoctor.org/reveal.js-converter/latest/
+** https://github.com/htl-leonding-college/git-intro-slides
+** Wir verwenden dieses Repo: https://github.com/htl-leonding-college/asciidoctor-convert-template
+
+
+* Inhalt
+** Kann variieren - je nach Thema
+** Grundsätzlich ist die Leistung des jeweiligen Teams zu "verkaufen"
+** mögl. Gliederung
+*** Ausgangssituation
+*** Problem
+*** Aufgabenstellung (Ergebnis, Leistung)
+*** Ziel (Leistungswirkung)
+*** Systemarchitektur
+*** Derzeitiger Stand des Projekts -> Youtrack
+*** Demo
+*** Resümee, Weitere Schritte, ...
+
+* Anschließend nach Präsentationen Code-Review
+
+
+
+== 2022-03-21
+
+=== gh-actions
+
+* Was sind gh-actions?
+
+** Jedes Softwaresystem muss deployed werden
+*** zB eine SPA auf einem Web-Server bereitstellen
+*** SPA ... Single Page Application
+
+** dieser Vorgang wird automatisert
+*** man verwendet dazu gh-actions
+
+** sind vergleichbar mit einer Scriptsprache, die sequentiell mehrere Aktionen ausführt.
+** zusätzlich gibt es actions, die eine bestimmte Funktionalität kapseln, zB
+*** Installation von Java
+*** kopieren des repos auf die aktuelle Maschine
+
+** in gh kann man dazu virtuelle Instanzen (meist Linux) verwenden
+
+==== Verwendung
+
+* in einem `.github/workflow`-Verzeichnis im Project-Root werden die yml-Files erstellt
+
+* Die gh-Actions sind grundsätzlich nach Jobs und Steps strukturiert
+
+** Jobs: werden parallel ausgeführt
+
+** Steps: werden sequentiell ausgeführt
+
+https://github.com/htl-leonding-example/leocloud/blob/master/.github/workflows/ci-cd.yml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
