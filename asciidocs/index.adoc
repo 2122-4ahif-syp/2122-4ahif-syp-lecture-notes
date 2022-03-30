@@ -406,7 +406,7 @@ include::plantuml/fussballliga-cld.puml[]
 
 ==== Verwendung
 
-* in einem `.github/workflow`-Verzeichnis im Project-Root werden die yml-Files erstellt
+* in einem `.github/workflows`-Verzeichnis im Project-Root werden die yml-Files erstellt
 
 * Die gh-Actions sind grundsätzlich nach Jobs und Steps strukturiert
 
@@ -417,16 +417,23 @@ include::plantuml/fussballliga-cld.puml[]
 https://github.com/htl-leonding-example/leocloud/blob/master/.github/workflows/ci-cd.yml
 
 
+== 2022-03-24 (Supplierung)
+
+* gh-actions
+
+** https://raw.githubusercontent.com/2122-5ahif-nvs/2122-5ahif-nvs-lecture-notes/main/build-html-docker.sh
+** https://raw.githubusercontent.com/2122-5ahif-nvs/2122-5ahif-nvs-lecture-notes/main/.github/workflows/gh-pages.yml
+
+== 2022-03-28
+
+* https://www.mytechiebits.com/GithubActionsWorkflow
+
+* https://github.com/caberger/leocloud/blob/master/.github/workflows/ci-cd.yml
 
 
+=== Uebung - Deployment einer native quarkus app in die oravm
 
-
-
-
-
-
-
-
+* mittels gh-actions eine beliebige quarkus-app nativ kompilieren und in die oravm mit scp kopieren
 
 
 
