@@ -437,5 +437,16 @@ https://github.com/htl-leonding-example/leocloud/blob/master/.github/workflows/c
 
 
 
+== 2022-04-25
+
+=== Projekt Franklyn2 - Sachstandsbericht
+
+* Sprints sind ungenügend
+
+
+=== Testen mit Karate
+
+
+
 
 
