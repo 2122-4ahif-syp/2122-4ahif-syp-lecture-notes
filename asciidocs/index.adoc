@@ -448,5 +448,168 @@ https://github.com/htl-leonding-example/leocloud/blob/master/.github/workflows/c
 
 
 
+== 2022-05-24
+
+== Qualitätssicherung
+
+=== Buch Kapitel QS
+
+* Konstruktive Maßnahmen
+* Analytische Maßnahmen
+** statische Prüfungen
+** dynamische Prüfungen
+
+=== Test Doubles
+
+* https://martinfowler.com/bliki/TestDouble.html
+
+* Test Doubles
+** *Dummy* objects are passed around but never actually used. Usually they are just used to fill parameter lists.
+** *Fake* objects actually have working implementations, but usually take some shortcut which makes them not suitable for production (an InMemoryTestDatabase is a good example).
+** *Stubs* provide canned answers to calls made during the test, usually not responding at all to anything outside what's programmed in for the test.
+** *Spies* are stubs that also record some information based on how they were called. One form of this might be an email service that records how many messages it was sent.
+** *Mocks* are pre-programmed with expectations which form a specification of the calls they are expected to receive. They can throw an exception if they receive a call they don't expect and are checked during verification to ensure they got all the calls they were expecting.
+
+
+=== Testen mit Karate
+
+* https://github.com/karatelabs/karate#karate
+
+* wir verwenden hier nur das API-Testing
+
+==== pom.xml - Dependencies
+
+[source,xml]
+----
+<dependency>
+  <groupId>com.intuit.karate</groupId>
+  <artifactId>karate-junit5</artifactId>
+  <version>1.2.0</version>
+  <scope>test</scope>
+</dependency>
+----
+
+
+.Zusätzliche Abhängigkeiten, da Karate Probleme mit Quarkus hat
+[source,xml]
+----
+<properties>
+    ...
+    <graal-sdk.version>22.1.0.1</graal-sdk.version>
+</properties>
+...
+<dependencies>
+    ...
+    <dependency>
+      <groupId>org.graalvm.sdk</groupId>
+      <artifactId>graal-sdk</artifactId>
+      <version>${graal-sdk.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.graalvm.js</groupId>
+      <artifactId>js</artifactId>
+      <version>${graal-sdk.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.graalvm.js</groupId>
+      <artifactId>js-scriptengine</artifactId>
+      <version>${graal-sdk.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.graalvm.truffle</groupId>
+      <artifactId>truffle-api</artifactId>
+      <version>${graal-sdk.version}</version>
+      <scope>test</scope>
+    </dependency>
+</dependencies>
+----
+
+==== Config File
+
+.src/java/karate-config.js
+[source,js]
+----
+function fn() {
+    var env = karate.env; // get java system property 'karate.env'
+    karate.log('karate.env system property was:', env);
+    if (!env) {
+        env = 'dev'; // a custom 'intelligent' default
+    }
+    var config = { // base config JSON
+        baseUrl: 'http://localhost:8081'
+    };
+    // don't waste time waiting for a connection or if servers don't respond within 5 seconds
+    karate.configure('connectTimeout', 5000);
+    karate.configure('readTimeout', 2000);
+    return config;
+}
+----
+
+=== gherkin-Testfile
+
+[source,gherkin]
+----
+Feature: Product creation endpoint.
+  An user of the endpoint is able to create Products
+
+Background:
+  * url baseUrl
+
+Scenario: Create a Product
+  Given path 'products'
+  And request { name: "Timmie's Hundefutter" }
+  When method POST
+  Then status 201
+
+Scenario: Get a product
+  Given path 'products'
+  When method GET
+  Then status 200
+  And match response ==  { name: "Timmie's Hundefutter" }
+----
+
+=== JUnit-Test
+
+* Die Cucumber/gherkin-Tests werden von einem junit-Test aufgerufen
+
+.ProductResourceTest.java
+[source,java]
+----
+package at.htl.karatedemo.boundary;
+
+import com.intuit.karate.junit5.Karate;
+import io.quarkus.test.junit.QuarkusTest;
+
+@QuarkusTest
+class ProductResourceTest {
+
+    @Karate.Test
+    Karate product_crud_in_productEndpointTest() {
+        return Karate.run("products").relativeTo(getClass());
+    }
+}
+----
+
+=== results
+
+==== intellij
+
+image::karate-tests.png[
+
+==== karate report
+
+.target/karate-reports/karate-summary.html
+image:karate-reports1.png[]
+
+image:karate-reports2.png[]
+
+
+
+
+
+
 
 
