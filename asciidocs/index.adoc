@@ -606,10 +606,95 @@ image:karate-reports1.png[]
 
 image:karate-reports2.png[]
 
+== 2022-06-21 Testarten
+
+image::v-modell-my.png[]
+
+image::testarten.png[]
+
+=== Pattern
+
+* given - when - then
+* arrange - act assert (AAA)
 
 
+== 2020-06-29
+
+=== User Design, User Experience
+
+==== Gestaltgesetze
+
+image::gestaltgesetze.png[]
+
+* ISO-Norm 9241-12
+
+==== Usability-Interaktionsprinzipien
+
+* https://ux-ui-design.de/10-prinzipien-fuer-usability-und-user-interface-design/[Grundprinzipien der GUI^]:
+. Sichtbarkeit des Zustands und Feedback des Systems
+. Übereinstimmung mit der (realen) Welt der Nutzer
+. Kontrolle und Freiheit der Nutzer - Nutzer sollen die Freiheit haben Aufgaben abzubrechen und Aktion zu widerrufen.
+. Konsistenz und Standards- branchenübliche Standards; Innere Konsistenz bedeutet, dass Elemente, die gleiche Aufgaben haben, auch in Aussehen und Verhalten gleich sind.
+. Fehlerprävention - Am besten gestaltest du das System so, dass Fehleingaben unwahrscheinlich werden zB Eingabefeld für Telefonnummer nur Ziffern als Eingabe zulässt
+. Helfen Fehler zu erkennen, verstehen und beheben - verständliche und gut sichtbare Fehlermeldungen
+. Hilfe und Dokumentation
+
+* https://ux-ui-design.de/usability-interaktionprinzipien/[Interaktionsprinzipien^]:
+. Aufgabenangemessenheit
+. Selbstbeschreibungsfähigkeit
+. Erwartungskonformität
+. Erlernbarkeit
+. Steuerbarkeit
+. Robustheit gegen Benutzungsfehler
+
+=== Git Branching Strategies
+
+* https://www.sitepoint.com/use-git-branches-buddy/
+* https://medium.com/@rafavinnce/gitflow-branch-guide-8a523360c053
+
+==== Zero Branch Strategy
+image::git-1-zero-branch-strategy.png[]
+
+==== Develop Branch Strategy
+image::git-2-develop-branch-strategy.png[]
+
+==== Feature Branch Strategy
+image::git-3-feature-branch-strategy.png[]
+
+==== Gitflow Branch Strategy
+image::git-4-gitflow-branch-strategy.png[]
+
+=== Versionierung
+
+image::versionierung.png[]
 
 
+* *pre-alpha*: Oft wird eine solche Version verwendet, wenn ein halbwegs fertiges Modul der Software vorgestellt werden soll. Eine weitere Bezeichnung ist die Entwicklervorschau (von englisch developer preview)
+* *alpha*: Die erste zum Test durch Fremde (also nicht die eigentlichen Entwickler) bestimmte Version. Noch nicht feature-complete.
+* *beta*:Eine Beta-Version ist die erste Version, die vom Hersteller zu Testzwecken veröffentlicht wird. Der Begriff ist nicht exakt definiert, als Faustregel zur Abgrenzung einer Beta-Version von anderen Versionen gilt in der Regel, dass in ihr zwar alle wesentlichen Funktionen des Programms implementiert, aber noch nicht vollständig getestet sind. Das Programm kann oder wird daher unter Umständen noch viele, evtl. auch schwerwiegende Fehler enthalten, die einen produktiven Einsatz nicht empfehlenswert machen.
+* *release candidate*: Darin sind alle Funktionen, die die endgültige Version der Software enthalten soll, schon verfügbar (sogenannter feature complete), alle bis dahin bekannten Fehler sind behoben. Aus dem Release Candidate wird vor der Veröffentlichung die endgültige Version erstellt, um einen abschließenden Produkttest oder Systemtest durchzuführen. Dabei wird die Qualität der Software überprüft und nach verbliebenen Programmfehlern gesucht.
 
 
+=== Arten von Systemarchitekturdiagrammen
 
+==== Logische Architecture
+
+.https://www.datasciencecentral.com/system-modeling-understanding-logical-and-physical-architecture/
+image::3-tier-arch.png[]
+
+
+==== Conceptual Architecture Diagram
+
+.https://sixro.net/software-architecture-diagram-types/
+image::conceptual-system-architecture.png[]
+
+.Modernizing Enterprise Java by Markus Eisele and Natale Vinto, 2022
+image::concept-sys-arch-diagr-2.png[]
+
+==== UML
+
+* Deployment Diagram
+
+==== 5 diagrams you need to document your solution architecture
+
+* https://vvsevolodovich.dev/5-diagrams-to-document-software-architecture/[^]
