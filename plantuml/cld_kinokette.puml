@@ -1,0 +1,39 @@
+@startuml
+left to right direction
+
+
+class Kino {
+
+}
+
+class Saal {
+
+}
+
+class Sitz {
+
+  -int: reihe
+  -int: platz
+
+}
+
+class Film {
+
+}
+
+class Vorstellung {
+
+}
+
+class Eintrittskarte {
+
+}
+
+Kino <-- Saal
+Saal <-- Sitz
+Vorstellung --> Film
+Saal <-- Vorstellung
+Sitz "1" <-- "*" Eintrittskarte
+Eintrittskarte -- Vorstellung
+
+@enduml

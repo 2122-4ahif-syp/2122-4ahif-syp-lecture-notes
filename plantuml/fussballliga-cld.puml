@@ -1,0 +1,42 @@
+@startuml
+class Verein {
+
+}
+
+class Spieler {
+
+}
+
+class Trainer {
+}
+
+class Betreuer {
+}
+
+class Beruf {
+}
+
+class Person {
+}
+
+class Team {
+    verein: Verein
+}
+
+class Match {
+    heim: Team
+    auswaerts: Team
+    score1: int
+    score2: int
+}
+
+Verein <-- Team
+Team <-- Match: heim
+Team <-- Match: auswaerts
+
+
+
+
+
+
+@enduml
